@@ -74,21 +74,7 @@ const { autoStatusCommand, handleStatusUpdate } = require('./commands/autostatus
 // Global settings
 global.packname = settings.packname;
 global.author = settings.author;
-global.channelLink = "https://whatsapp.com/channel/0029VazqxsXD38CPnrlkER00";
 global.ytch = "Mr JAYDEB";
-
-// Add this near the top of main.js with other global configurations
-const channelInfo = {
-    contextInfo: {
-        forwardingScore: 999,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'JaydebBot',
-            serverMessageId: -1
-        }
-    }
-};
 
 async function handleMessages(sock, messageUpdate, printLog) {
     try {
